@@ -26,8 +26,8 @@ Or add script in your `package.json`:
 
 Screenshot with error and warning:
 
-![Screenshot with error and warning](screenie-error-and-warning.jpg)
+![Screenshot with error and warning](docs/screenie-error-and-warning.jpg)
 
 Screenshot of success:
 
-![Screenshot of success](screenie-successjpg.jpg)
+![Screenshot of success](docs/screenie-successjpg.jpg)
