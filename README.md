@@ -4,22 +4,24 @@
 
 ## Installation
 
-`npm install eslint-formatter-checklist --save-dev`
+```shell
+npm install eslint-formatter-checklist --save-dev
+```
 
 ## Usage
 
 Run:
 
-```
-node_modules\.bin\eslint --format checklist .
+```shell
+npx eslint --format checklist .
 ```
 
 Or add script in your `package.json`:
 
 ```json
-  "scripts": {
-    "lint": "eslint -f checklist ."
-  }
+"scripts": {
+  "lint": "eslint -f checklist ."
+}
 ```
 
 ## Screenshot
