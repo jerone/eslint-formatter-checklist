@@ -1,26 +1,25 @@
 {
   "name": "eslint-formatter-checklist",
   "version": "0.0.1",
-  "description": "An ESLint formatter with checklist style.",
-  "main": "main.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jerone/eslint-formatter-checklist.git"
-  },
+  "description": "ESLint formatter with checklist style.",
+  "homepage": "https://github.com/jerone/eslint-formatter-checklist#readme",
+  "author": "Jeroen van Warmerdam <jeronevw@hotmail.com>",
   "keywords": [
     "eslint",
     "eslint-formatter",
     "eslintformatter"
   ],
-  "scripts": {
-    "lint": "eslint --format ./main.js ."
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerone/eslint-formatter-checklist.git"
   },
-  "author": "Jeroen van Warmerdam",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jerone/eslint-formatter-checklist/issues"
   },
-  "homepage": "https://github.com/jerone/eslint-formatter-checklist#readme",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
@@ -28,7 +27,8 @@
     "eslint-plugin-promise": "^5.1.1",
     "eslint-plugin-standard": "^4.1.0"
   },
-  "dependencies": {
-    "chalk": "^4.1.2"
-  }
+  "scripts": {
+    "lint": "eslint --format ./main.js ."
+  },
+  "main": "main.js"
 }
