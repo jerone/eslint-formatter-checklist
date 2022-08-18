@@ -30,5 +30,5 @@
   "scripts": {
     "lint": "eslint --format ./main.js ."
   },
-  "main": "main.js"
+  "main": "index.js"
 }
