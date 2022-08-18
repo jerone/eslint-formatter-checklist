@@ -7,9 +7,7 @@
 
 const { prefixes, error, warning, success, pluralize } = require("./utils");
 
-module.exports = (results) => {
-  results = results || [];
-
+module.exports = (results = []) => {
   const output = [];
 
   function reportFile(result) {
