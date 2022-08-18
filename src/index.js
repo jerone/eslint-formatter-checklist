@@ -34,34 +34,26 @@ module.exports = (results = []) => {
   }
 
   function reportSummary(result) {
-    let _prefix, _status;
+    let p, s;
     if (result.errorCount > 0) {
-      _prefix = prefixes.error;
-      _status = error("Error!");
+      p = prefixes.error;
+      s = error("Error!");
     } else if (result.warningCount > 0) {
-      _prefix = prefixes.warning;
-      _status = warning("Warning!");
+      p = prefixes.warning;
+      s = warning("Warning!");
     } else {
-      _prefix = prefixes.success;
-      _status = success("Ok!");
+      p = prefixes.success;
+      s = success("Ok!");
     }
-    return (
-      _prefix +
-      " " +
-      _status +
-      " » " +
-      result.errorCount +
-      " " +
-      pluralize("error", result.errorCount) +
-      " and " +
-      result.warningCount +
-      " " +
-      pluralize("warning", result.warningCount) +
-      " in " +
-      result.fileCount +
-      " " +
-      pluralize("file", result.fileCount)
-    );
+
+    const eC = result.errorCount;
+    const eT = pluralize("error", result.errorCount);
+    const wC = result.warningCount;
+    const wT = pluralize("warning", result.warningCount);
+    const fC = result.fileCount;
+    const fT = pluralize("file", result.fileCount);
+
+    return `${p} ${s} » ${eC} ${eT} and ${wC} ${wT} in ${fC} ${fT}`;
   }
 
   const summary = results.reduce(
