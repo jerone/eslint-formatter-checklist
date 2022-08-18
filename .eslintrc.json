@@ -15,5 +15,20 @@
   "parserOptions": {
     "ecmaVersion": "latest"
   },
-  "rules": {}
+  "overrides": [
+    {
+      "files": ["*.md"],
+      "parser": "eslint-plugin-markdownlint/parser",
+      "extends": [
+        "plugin:markdownlint/recommended",
+        // Enables eslint-plugin-prettier and eslint-config-prettier.
+        // This will display Prettier errors as ESLint errors.
+        // This should always be the last configuration in the extends array.
+        "plugin:prettier/recommended"
+      ],
+      "rules": {
+        "prettier/prettier": ["error", { "parser": "markdown" }]
+      }
+    }
+  ]
 }
