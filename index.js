@@ -23,14 +23,15 @@ module.exports = (results) => {
   }
 
   function reportMessage(result) {
-    if (result.severity === 2) {
-      return `     ${prefixes.error} ${error("#" + result.line)}: ${
-        result.message
-      }`;
-    } else if (result.severity === 1) {
-      return `     ${prefixes.warning} ${warning("#" + result.line)}: ${
-        result.message
-      }`;
+    switch (result.severity) {
+      case 2:
+        return `     ${prefixes.error} ${error("#" + result.line)}: ${
+          result.message
+        }`;
+      case 1:
+        return `     ${prefixes.warning} ${warning("#" + result.line)}: ${
+          result.message
+        }`;
     }
   }
 
