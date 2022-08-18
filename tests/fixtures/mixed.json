@@ -1,0 +1,35 @@
+[
+  {
+    "filePath": "index1.js",
+    "messages": [
+      { "line": 1, "severity": 1, "message": "Unexpected console statement." },
+      { "line": 2, "severity": 1, "message": "Unexpected console statement." }
+    ],
+    "errorCount": 0,
+    "warningCount": 2
+  },
+  {
+    "filePath": "index2.js",
+    "messages": [
+      { "line": 1, "severity": 2, "message": "Unexpected console statement." },
+      { "line": 2, "severity": 2, "message": "Unexpected console statement." }
+    ],
+    "errorCount": 2,
+    "warningCount": 0
+  },
+  {
+    "filePath": "index3.js",
+    "messages": [
+      { "line": 1, "severity": 1, "message": "Unexpected console statement." },
+      { "line": 2, "severity": 2, "message": "Unexpected console statement." }
+    ],
+    "errorCount": 1,
+    "warningCount": 1
+  },
+  {
+    "filePath": "index4.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0
+  }
+]
