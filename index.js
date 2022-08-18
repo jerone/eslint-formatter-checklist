@@ -5,48 +5,34 @@
 
 "use strict";
 
-const chalk = require("chalk");
+const { prefixes, error, warning, success, pluralize } = require("./utils");
 
 module.exports = (results) => {
   results = results || [];
 
   const output = [];
 
-  const prefix = {
-    error: "✗",
-    warning: "⚡",
-    success: "✓",
-  };
-
-  const error = chalk.bold.red;
-  const warning = chalk.bold.yellow;
-  const success = chalk.bold.green;
-
-  function pluralize(word, count) {
-    return count === 1 ? word : word + "s";
-  }
-
   function reportFile(result) {
     if (result.errorCount > 0) {
-      return `  ${prefix.error} ${error(result.filePath)}`;
+      return `  ${prefixes.error} ${error(result.filePath)}`;
     } else if (result.warningCount > 0) {
-      return `  ${prefix.warning} ${warning(result.filePath)}`;
+      return `  ${prefixes.warning} ${warning(result.filePath)}`;
     } else {
-      return `  ${prefix.success} ${success(result.filePath)}`;
+      return `  ${prefixes.success} ${success(result.filePath)}`;
     }
   }
 
   function reportMessage(result) {
     if (result.severity === 2) {
-      return `     ${prefix.error} ${error("#" + result.line)}: ${
+      return `     ${prefixes.error} ${error("#" + result.line)}: ${
         result.message
       }`;
     } else if (result.severity === 1) {
-      return `     ${prefix.warning} ${warning("#" + result.line)}: ${
+      return `     ${prefixes.warning} ${warning("#" + result.line)}: ${
         result.message
       }`;
     } else {
-      return `     ${prefix.success} ${success("#" + result.line)}: ${
+      return `     ${prefixes.success} ${success("#" + result.line)}: ${
         result.message
       }`;
     }
@@ -55,13 +41,13 @@ module.exports = (results) => {
   function reportSummary(result) {
     let _prefix, _status;
     if (result.errorCount > 0) {
-      _prefix = prefix.error;
+      _prefix = prefixes.error;
       _status = error("Error!");
     } else if (result.warningCount > 0) {
-      _prefix = prefix.warning;
+      _prefix = prefixes.warning;
       _status = warning("Warning!");
     } else {
-      _prefix = prefix.success;
+      _prefix = prefixes.success;
       _status = success("Ok!");
     }
     return (
