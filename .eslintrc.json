@@ -1,4 +1,5 @@
 {
+  "root": true,
   "env": {
     "commonjs": true,
     "es2021": true,
@@ -12,9 +13,6 @@
     // This should always be the last configuration in the extends array.
     "plugin:prettier/recommended"
   ],
-  "parserOptions": {
-    "ecmaVersion": "latest"
-  },
   "overrides": [
     {
       "files": [".js"],
@@ -24,7 +22,10 @@
         // This will display Prettier errors as ESLint errors.
         // This should always be the last configuration in the extends array.
         "plugin:prettier/recommended"
-      ]
+      ],
+      "parserOptions": {
+        "ecmaVersion": "latest"
+      }
     },
     {
       "files": ["*.json"],
