@@ -1,5 +1,19 @@
 {
-  "env": { "jest": true },
-  "extends": ["standard", "prettier"],
-  "plugins": ["standard", "promise"]
+  "env": {
+    "commonjs": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "standard",
+    // Enables eslint-plugin-prettier and eslint-config-prettier.
+    // This will display Prettier errors as ESLint errors.
+    // This should always be the last configuration in the extends array.
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {}
 }
