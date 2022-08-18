@@ -18,6 +18,16 @@
   },
   "overrides": [
     {
+      "files": ["*.json"],
+      "extends": [
+        "plugin:json/recommended-with-comments",
+        // Enables eslint-plugin-prettier and eslint-config-prettier.
+        // This will display Prettier errors as ESLint errors.
+        // This should always be the last configuration in the extends array.
+        "plugin:prettier/recommended"
+      ]
+    },
+    {
       "files": ["*.md"],
       "parser": "eslint-plugin-markdownlint/parser",
       "extends": [
