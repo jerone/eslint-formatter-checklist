@@ -6,6 +6,7 @@
     "jest": true
   },
   "extends": [
+    "plugin:@cspell/recommended",
     "standard",
     // Enables eslint-plugin-prettier and eslint-config-prettier.
     // This will display Prettier errors as ESLint errors.
