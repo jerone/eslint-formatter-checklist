@@ -1,5 +1,5 @@
-const formatter = require("../index");
-const { error, warning, success } = require("../utils");
+const formatter = require("../src/index");
+const { error, warning, success } = require("../src/utils");
 const fixtureSingleError = require("./fixtures/single-error.json");
 const fixtureMultipleErrors = require("./fixtures/multiple-errors.json");
 const fixtureSingleWarning = require("./fixtures/single-warning.json");

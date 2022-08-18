@@ -1,5 +1,5 @@
 *
-!index.js
+!src/**
 !package.json
 !LICENSE
 !README
