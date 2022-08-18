@@ -31,10 +31,6 @@ module.exports = (results) => {
       return `     ${prefixes.warning} ${warning("#" + result.line)}: ${
         result.message
       }`;
-    } else {
-      return `     ${prefixes.success} ${success("#" + result.line)}: ${
-        result.message
-      }`;
     }
   }
 
