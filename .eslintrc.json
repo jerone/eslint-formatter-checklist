@@ -13,6 +13,9 @@
     "plugin:prettier/recommended"
   ],
   "overrides": [
+    /*
+     * Javascript files.
+     */
     {
       "files": ["*.js"],
       "extends": [
@@ -26,6 +29,10 @@
         "ecmaVersion": "latest"
       }
     },
+
+    /*
+     * JSON files.
+     */
     {
       "files": ["*.json"],
       "extends": [
@@ -36,6 +43,10 @@
         "plugin:prettier/recommended"
       ]
     },
+
+    /*
+     * Markdown files.
+     */
     {
       "files": ["*.md"],
       "parser": "eslint-plugin-markdownlint/parser",
