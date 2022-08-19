@@ -15,7 +15,7 @@
   ],
   "overrides": [
     {
-      "files": [".js"],
+      "files": ["*.js"],
       "extends": [
         "standard",
         // Enables eslint-plugin-prettier and eslint-config-prettier.
