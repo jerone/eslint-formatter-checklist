@@ -14,6 +14,9 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -34,5 +37,12 @@
     "source.fixAll": true // Fix all fixable errors on save.
   },
   // Show ESLint errors in the editor. Languages should match supported files `.eslintrc.json`.
-  "eslint.validate": ["javascript", "json", "jsonc", "yaml", "markdown"]
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "json",
+    "jsonc",
+    "yaml",
+    "markdown"
+  ]
 }

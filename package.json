@@ -20,6 +20,7 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "lockfile-lint && eslint -f ./src/index.js .",
+    "lint:fix": "prettier --write \"**/*\" & eslint -f ./src/index.js --fix .",
     "test": "jest"
   },
   "dependencies": {
