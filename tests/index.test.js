@@ -1,3 +1,4 @@
+const { test, expect } = require("@jest/globals");
 const formatter = require("../src/index");
 const { error, warning, success } = require("../src/utils");
 const fixtureSingleError = require("./fixtures/single-error.json");
