@@ -21,6 +21,7 @@
   "scripts": {
     "lint": "lockfile-lint && eslint -f ./src/index.js .",
     "lint:fix": "prettier --write \"**/*\" & eslint -f ./src/index.js --fix .",
+    "ncu": "ncu --target minor chalk && ncu -x chalk",
     "test": "jest"
   },
   "dependencies": {
