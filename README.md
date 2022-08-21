@@ -38,4 +38,4 @@ Screenshot with error and warning:
 
 Screenshot of success:
 
-![Screenshot of success](docs/screenie-successjpg.jpg)
+![Screenshot of success](docs/screenie-success.jpg)
