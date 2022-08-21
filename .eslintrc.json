@@ -81,6 +81,9 @@
         // This will display Prettier errors as ESLint errors.
         // This should always be the last configuration in the extends array.
         "plugin:prettier/recommended"
+        // Enable once supported for Markdown files.
+        // See https://github.com/streetsidesoftware/cspell/issues/3464
+        //"plugin:@cspell/recommended"
       ],
       "rules": {
         "prettier/prettier": ["error", { "parser": "markdown" }]
