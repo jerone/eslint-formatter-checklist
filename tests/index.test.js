@@ -93,8 +93,15 @@ describe("multiple files", () => {
 });
 
 describe("no files", () => {
-  test("should succeed", () => {
+  test("empty array, should succeed", () => {
     const output = formatter([]);
+    expect(output).toBe(`\
+
+✓ ${success("Ok!")} » 0 errors and 0 warnings in 0 files`);
+  });
+
+  test("undefined, should succeed", () => {
+    const output = formatter(undefined);
     expect(output).toBe(`\
 
 ✓ ${success("Ok!")} » 0 errors and 0 warnings in 0 files`);
