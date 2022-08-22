@@ -19,10 +19,11 @@
   "author": "Jeroen van Warmerdam <jeronevw@hotmail.com>",
   "main": "src/index.js",
   "scripts": {
+    "clean": "rimraf coverage",
     "lint": "lockfile-lint && eslint -f ./src/index.js .",
     "lint:fix": "prettier --write \"**/*\" & eslint -f ./src/index.js --fix .",
     "ncu": "ncu --target minor chalk && ncu -x chalk",
-    "test": "jest"
+    "test": "npm run clean && jest"
   },
   "dependencies": {
     "chalk": "^4.1.2"
@@ -40,7 +41,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "jest": "^28.1.3",
-    "lockfile-lint": "^4.8.0"
+    "lockfile-lint": "^4.8.0",
+    "rimraf": "^3.0.2"
   },
   "engines": {
     "node": ">=14.15.0"
