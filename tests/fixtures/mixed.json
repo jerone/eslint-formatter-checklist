@@ -1,35 +1,65 @@
 [
   {
+    "errorCount": 0,
     "filePath": "index1.js",
     "messages": [
-      { "line": 1, "severity": 1, "message": "Unexpected console statement." },
-      { "line": 2, "severity": 1, "message": "Unexpected console statement." }
+      {
+        "column": 1,
+        "line": 1,
+        "message": "Unexpected console statement.",
+        "severity": 1
+      },
+      {
+        "column": 2,
+        "line": 2,
+        "message": "Unexpected console statement.",
+        "severity": 1
+      }
     ],
-    "errorCount": 0,
     "warningCount": 2
   },
   {
+    "errorCount": 2,
     "filePath": "index2.js",
     "messages": [
-      { "line": 1, "severity": 2, "message": "Unexpected console statement." },
-      { "line": 2, "severity": 2, "message": "Unexpected console statement." }
+      {
+        "column": 1,
+        "line": 1,
+        "message": "Unexpected console statement.",
+        "severity": 2
+      },
+      {
+        "column": 2,
+        "line": 2,
+        "message": "Unexpected console statement.",
+        "severity": 2
+      }
     ],
-    "errorCount": 2,
     "warningCount": 0
   },
   {
+    "errorCount": 1,
     "filePath": "index3.js",
     "messages": [
-      { "line": 1, "severity": 1, "message": "Unexpected console statement." },
-      { "line": 2, "severity": 2, "message": "Unexpected console statement." }
+      {
+        "column": 1,
+        "line": 1,
+        "message": "Unexpected console statement.",
+        "severity": 1
+      },
+      {
+        "column": 2,
+        "line": 2,
+        "message": "Unexpected console statement.",
+        "severity": 2
+      }
     ],
-    "errorCount": 1,
     "warningCount": 1
   },
   {
+    "errorCount": 0,
     "filePath": "index4.js",
     "messages": [],
-    "errorCount": 0,
     "warningCount": 0
   }
 ]

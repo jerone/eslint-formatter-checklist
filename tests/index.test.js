@@ -14,8 +14,8 @@ describe("single file", () => {
     const output = formatter(fixtureSingleError);
     expect(output).toBe(`\
   ✗ ${error("index1.js")}
-     ⚡ ${warning("#1")}: Unexpected console statement.
-     ✗ ${error("#2")}: Unexpected console statement.
+     ⚡ ${warning("#1|1")}: Unexpected console statement.
+     ✗ ${error("#2|2")}: Unexpected console statement.
 
 ✗ ${error("Error!")} » 1 error and 1 warning in 1 file`);
   });
@@ -24,7 +24,7 @@ describe("single file", () => {
     const output = formatter(fixtureSingleWarning);
     expect(output).toBe(`\
   ⚡ ${warning("index1.js")}
-     ⚡ ${warning("#1")}: Unexpected console statement.
+     ⚡ ${warning("#1|1")}: Unexpected console statement.
 
 ⚡ ${warning("Warning!")} » 0 errors and 1 warning in 1 file`);
   });
@@ -43,11 +43,11 @@ describe("multiple files", () => {
     const output = formatter(fixtureMultipleErrors);
     expect(output).toBe(`\
   ✗ ${error("index1.js")}
-     ⚡ ${warning("#1")}: Unexpected console statement.
-     ✗ ${error("#2")}: Unexpected console statement.
+     ⚡ ${warning("#1|1")}: Unexpected console statement.
+     ✗ ${error("#2|2")}: Unexpected console statement.
   ✗ ${error("index2.js")}
-     ⚡ ${warning("#1")}: Unexpected console statement.
-     ✗ ${error("#2")}: Unexpected console statement.
+     ⚡ ${warning("#1|1")}: Unexpected console statement.
+     ✗ ${error("#2|2")}: Unexpected console statement.
 
 ✗ ${error("Error!")} » 2 errors and 2 warnings in 2 files`);
   });
@@ -56,11 +56,11 @@ describe("multiple files", () => {
     const output = formatter(fixtureMultipleWarnings);
     expect(output).toBe(`\
   ⚡ ${warning("index1.js")}
-     ⚡ ${warning("#1")}: Unexpected console statement.
-     ⚡ ${warning("#2")}: Unexpected console statement.
+     ⚡ ${warning("#1|1")}: Unexpected console statement.
+     ⚡ ${warning("#2|2")}: Unexpected console statement.
   ⚡ ${warning("index2.js")}
-     ⚡ ${warning("#1")}: Unexpected console statement.
-     ⚡ ${warning("#2")}: Unexpected console statement.
+     ⚡ ${warning("#1|1")}: Unexpected console statement.
+     ⚡ ${warning("#2|2")}: Unexpected console statement.
 
 ⚡ ${warning("Warning!")} » 0 errors and 4 warnings in 2 files`);
   });
@@ -78,14 +78,14 @@ describe("multiple files", () => {
     const output = formatter(fixtureMixed);
     expect(output).toBe(`\
   ⚡ ${warning("index1.js")}
-     ⚡ ${warning("#1")}: Unexpected console statement.
-     ⚡ ${warning("#2")}: Unexpected console statement.
+     ⚡ ${warning("#1|1")}: Unexpected console statement.
+     ⚡ ${warning("#2|2")}: Unexpected console statement.
   ✗ ${error("index2.js")}
-     ✗ ${error("#1")}: Unexpected console statement.
-     ✗ ${error("#2")}: Unexpected console statement.
+     ✗ ${error("#1|1")}: Unexpected console statement.
+     ✗ ${error("#2|2")}: Unexpected console statement.
   ✗ ${error("index3.js")}
-     ⚡ ${warning("#1")}: Unexpected console statement.
-     ✗ ${error("#2")}: Unexpected console statement.
+     ⚡ ${warning("#1|1")}: Unexpected console statement.
+     ✗ ${error("#2|2")}: Unexpected console statement.
   ✓ ${success("index4.js")}
 
 ✗ ${error("Error!")} » 3 errors and 3 warnings in 4 files`);

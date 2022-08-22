@@ -21,13 +21,12 @@ module.exports = (results = []) => {
   }
 
   function reportMessage(result) {
+    const lineColumn = `#${result.line}|${result.column}`;
     switch (result.severity) {
       case 2:
-        return `     ${prefixes.error} ${error("#" + result.line)}: ${
-          result.message
-        }`;
+        return `     ${prefixes.error} ${error(lineColumn)}: ${result.message}`;
       case 1:
-        return `     ${prefixes.warning} ${warning("#" + result.line)}: ${
+        return `     ${prefixes.warning} ${warning(lineColumn)}: ${
           result.message
         }`;
     }
