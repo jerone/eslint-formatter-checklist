@@ -5,12 +5,14 @@
       {
         "column": 1,
         "line": 1,
+        "ruleId": "no-console",
         "severity": 1,
         "message": "Unexpected console statement."
       },
       {
         "column": 2,
         "line": 2,
+        "ruleId": "no-console",
         "severity": 2,
         "message": "Unexpected console statement."
       }
@@ -23,6 +25,7 @@
     "messages": [
       {
         "column": 1,
+        "ruleId": "no-console",
         "line": 1,
         "severity": 1,
         "message": "Unexpected console statement."
@@ -30,6 +33,7 @@
       {
         "column": 2,
         "line": 2,
+        "ruleId": "no-console",
         "severity": 2,
         "message": "Unexpected console statement."
       }

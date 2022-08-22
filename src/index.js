@@ -21,15 +21,20 @@ module.exports = (results = []) => {
   }
 
   function reportMessage(result) {
-    const lineColumn = `#${result.line}|${result.column}`;
+    let message = "     ";
     switch (result.severity) {
       case 2:
-        return `     ${prefixes.error} ${error(lineColumn)}: ${result.message}`;
+        message += prefixes.error;
+        message += ` ${error(`#${result.line}|${result.column}`)}`;
+        break;
       case 1:
-        return `     ${prefixes.warning} ${warning(lineColumn)}: ${
-          result.message
-        }`;
+        message += prefixes.warning;
+        message += ` ${warning(`#${result.line}|${result.column}`)}`;
+        break;
     }
+    message += `: ${result.message}`;
+    message += ` [${result.ruleId}]`;
+    return message;
   }
 
   function reportSummary(result) {

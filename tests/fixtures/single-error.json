@@ -5,6 +5,7 @@
     "messages": [
       {
         "column": 1,
+        "ruleId": "no-console",
         "line": 1,
         "message": "Unexpected console statement.",
         "severity": 1
@@ -12,6 +13,7 @@
       {
         "column": 2,
         "line": 2,
+        "ruleId": "no-console",
         "message": "Unexpected console statement.",
         "severity": 2
       }
