@@ -6,6 +6,8 @@
   "language": "en",
   // List of words to be always considered correct.
   "words": [
+    "classname",
+    "dorny",
     "eslintformatter",
     "fileoverview",
     "Jeroen",
