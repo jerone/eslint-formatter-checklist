@@ -33,7 +33,7 @@ jobs:
       - run: npm run test
       - name: Test Report
         uses: dorny/test-reporter@v1
-        if: success() || failure() # run this step even if previous step failed
+        if: success() || failure() # Run this step even if previous step failed.
         with:
           name: "test report (node v${{ matrix.node-version }})"
           path: coverage/junit.xml

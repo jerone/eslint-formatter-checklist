@@ -1,13 +1,8 @@
-/*
- * For a detailed explanation regarding each configuration property, visit:
- * https://jestjs.io/docs/configuration
- */
-
 /** @type {import('@jest/types').Config.InitialOptions} */
 module.exports = {
   collectCoverage: true,
   coverageDirectory: "coverage",
-  coverageReporters: ["text", "lcov"],
+  coverageReporters: ["text", "text-summary", "lcov"],
   reporters: [
     "default",
     [
