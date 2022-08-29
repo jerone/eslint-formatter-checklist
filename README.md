@@ -1,10 +1,10 @@
 # eslint-formatter-checklist
 
 [![npm](https://img.shields.io/npm/v/eslint-formatter-checklist)](https://www.npmjs.com/package/eslint-formatter-checklist)
-[![CI](https://github.com/jerone/eslint-formatter-checklist/actions/workflows/ci.yml/badge.svg)](https://github.com/jerone/eslint-formatter-checklist/actions/workflows/ci.yml)
-[![GitHub issues](https://img.shields.io/github/issues/jerone/eslint-formatter-checklist)](https://github.com/jerone/eslint-formatter-checklist)
+[![GitHub Action: CI](https://img.shields.io/github/workflow/status/jerone/eslint-formatter-checklist/CI?label=CI&logo=github)](https://github.com/jerone/eslint-formatter-checklist/actions/workflows/ci.yml)
+[![GitHub issues](https://img.shields.io/github/issues/jerone/eslint-formatter-checklist?logo=github)](https://github.com/jerone/eslint-formatter-checklist)
 [![MIT license](https://img.shields.io/github/license/jerone/eslint-formatter-checklist)](https://opensource.org/licenses/MIT)
-[![Code style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
+[![Code style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat&logo=prettier)](https://github.com/prettier/prettier)
 
 > An ESLint formatter with checklist style.
 
