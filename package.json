@@ -23,6 +23,7 @@
     "lint": "lockfile-lint && eslint -f ./src/index.js .",
     "lint:fix": "prettier --write \"**/*\" & eslint -f ./src/index.js --fix .",
     "ncu": "ncu --target minor chalk && ncu -x chalk",
+    "security:eslint": "eslint -f @microsoft/eslint-formatter-sarif -o eslint-results.sarif .",
     "test": "npm run clean && jest"
   },
   "dependencies": {
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "@cspell/eslint-plugin": "^6.8.1",
+    "@microsoft/eslint-formatter-sarif": "^3.0.0",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",

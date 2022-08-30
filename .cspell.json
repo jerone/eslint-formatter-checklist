@@ -6,13 +6,20 @@
   "language": "en",
   // List of words to be always considered correct.
   "words": [
+    "autobuild",
     "classname",
+    "Codecov",
+    "codeql",
     "dorny",
+    "Dsonar",
     "eslintformatter",
     "fileoverview",
     "Jeroen",
+    "jerone",
     "lcov",
+    "sarif",
     "screenie",
+    "sonarcloud",
     "unmocked",
     "Warmerdam"
   ]
