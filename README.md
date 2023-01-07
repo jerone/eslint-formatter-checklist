@@ -1,8 +1,8 @@
 # eslint-formatter-checklist
 
 [![npm](https://img.shields.io/npm/v/eslint-formatter-checklist)](https://www.npmjs.com/package/eslint-formatter-checklist)
-[![GitHub Action: CI](https://img.shields.io/github/workflow/status/jerone/eslint-formatter-checklist/CI?label=CI&logo=github)](https://github.com/jerone/eslint-formatter-checklist/actions/workflows/ci.yml)
-[![GitHub Action: Security](https://img.shields.io/github/workflow/status/jerone/eslint-formatter-checklist/Security?label=Security&logo=github)](https://github.com/jerone/eslint-formatter-checklist/actions/workflows/security.yml)
+[![GitHub Action: CI](https://img.shields.io/github/actions/workflow/status/jerone/eslint-formatter-checklist/.github/workflows/ci.yml?branch=master&label=CI&logo=github)](https://github.com/jerone/eslint-formatter-checklist/actions/workflows/ci.yml)
+[![GitHub Action: Security](https://img.shields.io/github/actions/workflow/status/jerone/eslint-formatter-checklist/.github/workflows/security.yml?branch=master&label=Security&logo=github)](https://github.com/jerone/eslint-formatter-checklist/actions/workflows/security.yml)
 [![Codecov](https://codecov.io/gh/jerone/eslint-formatter-checklist/branch/master/graph/badge.svg?token=BTJRO49LZT)](https://codecov.io/gh/jerone/eslint-formatter-checklist)
 [![SonarCloud: Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jerone_eslint-formatter-checklist&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jerone_eslint-formatter-checklist)
 [![SonarCloud: Coverage](https://sonarcloud.io/api/project_badges/measure?project=jerone_eslint-formatter-checklist&metric=coverage)](https://sonarcloud.io/summary/new_code?id=jerone_eslint-formatter-checklist)
