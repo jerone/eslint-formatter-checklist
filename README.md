@@ -50,3 +50,8 @@ Screenshot with error and warning:
 Screenshot of success:
 
 ![Screenshot of success](docs/screenie-success.jpg)
+
+<br/>
+<br/>
+
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://stand-with-ukraine.pp.ua)
