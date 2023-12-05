@@ -3,6 +3,8 @@
  * @author Jeroen van Warmerdam
  */
 
+// TODO: SonarCloud test
+
 "use strict";
 
 const { prefixes, error, warning, success, pluralize } = require("./utils");
