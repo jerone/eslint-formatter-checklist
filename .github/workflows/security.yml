@@ -59,8 +59,8 @@ jobs:
     steps:
       - uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: '21' # SonarCloud requires v17 or higher.
+          distribution: "temurin"
+          java-version: "21" # SonarCloud requires v17 or higher.
           check-latest: true
       - uses: actions/checkout@v3
         with:
