@@ -66,7 +66,7 @@ module.exports = (results = []) => {
       sum.warningCount += result.warningCount;
       return sum;
     },
-    { errorCount: 0, warningCount: 0, fileCount: results.length }
+    { errorCount: 0, warningCount: 0, fileCount: results.length },
   );
 
   results.forEach((result) => {
