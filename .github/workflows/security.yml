@@ -55,16 +55,16 @@ jobs:
     name: Run SonarCloud scanning
     runs-on: ubuntu-latest
     permissions:
-      pull-requests: read # allows SonarCloud to decorate PRs with analysis results
+      pull-requests: read # Allows SonarCloud to decorate PRs with analysis results.
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
       - uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '21'
+          java-version: '21' # SonarCloud requires v17 or higher.
           check-latest: true
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis.
       - name: Install dependencies
         run: npm ci --no-fund
       - name: Test and coverage
@@ -90,7 +90,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
+          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis.
       - name: Install dependencies
         run: npm ci --no-fund
       - name: Test and coverage
