@@ -70,7 +70,7 @@ jobs:
       - name: Test and coverage
         run: npm run test
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v1.6
+        uses: sonarsource/sonarcloud-github-action@master
         if: success() || failure() # Run this step even if previous step failed.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
