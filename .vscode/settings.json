@@ -44,5 +44,13 @@
     "jsonc",
     "yaml",
     "markdown"
-  ]
+  ],
+
+  /**
+   * SonarLint.
+   */
+  "sonarlint.connectedMode.project": {
+    "connectionId": "jerone",
+    "projectKey": "jerone_eslint-formatter-checklist"
+  }
 }
